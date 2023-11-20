@@ -27,7 +27,7 @@
 }
 
 .bg-service{
-    background-image: url("asset/bg-service.png");
+    background-image: url("asset/bg-servic.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -55,7 +55,7 @@
     }
 
     .bg-service{
-      background-image: url("asset/bg-service2.png") ;
+      background-image: url("asset/bg-servic.png") ;
     }
 
     .bg-portfolio{
