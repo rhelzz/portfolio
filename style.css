@@ -92,7 +92,7 @@
   }
 
   .progress-bar-animated {
-    animation: fadeInOut 2s infinite;
+    animation: fadeInOut 4s infinite;
 }
     
 @media (max-width: 768px) {
