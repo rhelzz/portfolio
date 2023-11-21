@@ -97,10 +97,9 @@
     
 @media (max-width: 768px) {
     #home img{
-        width: 100px;
+        width: 200px;
     }
         
-
     .bg-home{
         background-image: url("asset/bg-home2.png");
     }
