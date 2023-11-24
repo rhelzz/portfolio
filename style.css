@@ -1,126 +1,134 @@
 .bg-lightgray{
-    background-color: lightgray;
+  background-color: lightgray;
 }
 
 .shadow-sm2{
-    box-shadow: 0px 3px 10px black;
+  box-shadow: 0px 3px 10px black;
 }
 
 .text-white2{
-    color: whitesmoke;
+  color: whitesmoke;
 }
 
 .bg-skyblue{
-    background-color: rgb(76, 171, 208);
+  background-color: rgb(76, 171, 208);
 }
 
 .bg-home{
-    background-image: url("asset/bg-home.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-image: url("asset/bg-home.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .bg-about{
-    background-image: url("asset/bg-about.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-image: url("asset/bg-about.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .bg-service{
-    background-image: url("asset/bg-service.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-image: url("asset/bg-service.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .bg-portfolio{
-    background-image: url("asset/bg-portfolio.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-image: url("asset/bg-portfolio.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .bg-business{
-    background-image: url("asset/bg-business.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-image: url("asset/bg-business.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* Add this CSS code to your style tag or style.css file */
 .portfolio-item {
-    transition: opacity 0.5s ease-in-out, transform 0.3s ease-in-out;
-  }
-  
-  .portfolio-item img {
-    transition: opacity 0.5s ease-in-out, transform 0.3s ease-in-out;
-  }
-  
-  .portfolio-item:hover {
-    opacity: 0.8;
-    transform: scale(1.03);
-  }
-  
-  .portfolio-item:hover img {
-    opacity: 0.8;
-    transform: scale(1.03);
+  transition: opacity 0.5s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.portfolio-item img {
+  transition: opacity 0.5s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.portfolio-item:hover {
+  opacity: 0.8;
+  transform: scale(1.03);
+}
+
+.portfolio-item:hover img {
+  opacity: 0.8;
+  transform: scale(1.03);
 }
 
 /* Add this CSS code to your style tag or style.css file */
 .certificates .portfolio-item {
-    transition: opacity 0.5s ease-in-out, transform 0.3s ease-in-out;
-  }
-  
-  .certificates .portfolio-item img {
-    transition: opacity 0.5s ease-in-out, transform 0.3s ease-in-out;
-  }
-  
-  .certificates .portfolio-item:hover {
-    opacity: 0.8;
-    transform: scale(1.03);
-  }
-  
-  .certificates .portfolio-item:hover img {
-    opacity: 0.8;
-    transform: scale(1.03);
+  transition: opacity 0.5s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.certificates .portfolio-item img {
+  transition: opacity 0.5s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.certificates .portfolio-item:hover {
+  opacity: 0.8;
+  transform: scale(1.03);
+}
+
+.certificates .portfolio-item:hover img {
+  opacity: 0.8;
+  transform: scale(1.03);
 }
 
 @keyframes fadeInOut {
-    0%, 100% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0.5;
-    }
+  0%, 100% {
+    opacity: 1;
   }
-
-  .progress-bar-animated {
-    animation: fadeInOut 4s infinite;
+  50% {
+    opacity: 0.5;
+  }
 }
-    
+
+.progress-bar-animated {
+  animation: fadeInOut 4s infinite;
+}
+  
 @media (max-width: 768px) {
-    #home img{
-        width: 300px;
-    }
-        
-    .bg-home{
-        background-image: url("asset/bg-home2.png");
-    }
-
-    .bg-about{
-        background-image: url("asset/bg-about2.png");
-    }
-
-    .bg-service{
-      background-image: url("asset/bg-service2.png") ;
-    }
-
-    .bg-portfolio{
-      background-image: url("asset/bg-portfolio2.png");
-    }
-
-    .bg-business{
-      background-image: url("asset/bg-business2.png");
-    }
-
-    #business #icon{
-        color: black !important;
-    }
+  #home img{
+      width: 300px;
   }
+      
+  .bg-home{
+      background-image: url("asset/bg-home2.png");
+  }
+
+  .bg-about{
+      background-image: url("asset/bg-about2.png");
+  }
+
+  .bg-service{
+    background-image: url("asset/bg-service2.png") ;
+  }
+
+  .bg-portfolio{
+    background-image: url("asset/bg-portfolio2.png");
+  }
+
+  .bg-business{
+    background-image: url("asset/bg-business2.png");
+  }
+
+  #business #icon{
+      color: black !important;
+  }
+
+  #business-items{
+      background-color: white;
+  }
+
+  #ctext{
+    color: gray !important;
+  }
+}
