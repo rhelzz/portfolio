@@ -94,6 +94,18 @@
 .progress-bar-animated {
   animation: fadeInOut 4s infinite;
 }
+
+.reveal{
+  position: relative;
+  transform: translateY(120px);
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
   
 @media (max-width: 768px) {
   #home img{
