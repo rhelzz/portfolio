@@ -21,12 +21,17 @@
         scroll-behavior: smooth;
       }
 
+      #navbar .nav-link.active {
+      background-color: #000;
+      color: #fff;
+      }
+
     </style>
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0">
 
     <!-- Navbar -->
-    <nav class="navbar navbar-dark fixed-top bg-dark shadow-sm">
+    <nav class="navbar navbar-dark fixed-top bg-dark shadow-sm" id="navbar">
       <div class="container-lg">
         <a class="navbar-brand text-light fw-bold" href="#">R n Helzz</a>
         <div class="dropdown">
@@ -34,14 +39,14 @@
             <i class="fas fa-bars"></i>
           </button>
           <ul class="dropdown-menu dropdown-menu-end bg-dark" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item text-white" href="#home">Home</a></li>
-            <li><a class="dropdown-item text-white" href="#about">About</a></li>
-            <li><a class="dropdown-item text-white" href="#service">Service</a></li>
-            <li><a class="dropdown-item text-white" href="#portfolio">Portfolio</a></li>
-            <li><a class="dropdown-item text-white" href="#business">Business</a></li>
-            <li><a class="dropdown-item text-white" href="#contact">Contact</a></li>
-            <li><a class="dropdown-item text-white" href="#certificates">My Certificates</a></li>
-            <li><a class="dropdown-item text-white" href="index.html">Light Mode <i class="fa-solid fa-sun text-white"></i></a></li>
+            <li><a class="dropdown-item text-white nav-link" href="#home">Home</a></li>
+            <li><a class="dropdown-item text-white nav-link" href="#about">About</a></li>
+            <li><a class="dropdown-item text-white nav-link" href="#service">Service</a></li>
+            <li><a class="dropdown-item text-white nav-link" href="#portfolio">Portfolio</a></li>
+            <li><a class="dropdown-item text-white nav-link" href="#business">Business</a></li>
+            <li><a class="dropdown-item text-white nav-link" href="#contact">Contact</a></li>
+            <li><a class="dropdown-item text-white nav-link" href="#certificates">My Certificates</a></li>
+            <li><a class="dropdown-item text-white nav-link" href="index.html">Light Mode <i class="fa-solid fa-sun text-white"></i></a></li>
           </ul>
         </div>
       </div>
@@ -51,7 +56,7 @@
     <!-- Home -->
 
     <section class="home py-5 bg-secondary" id="home">
-      <div class="container-lg">
+      <div class="container-lg reveal">
         <div class="row align-items-center align-content-center">
           <div class="col-md-6">
             <div class="home-img text-center">
@@ -76,7 +81,7 @@
     <!-- About -->
 
     <section class="about py-5 bg-lightgray" id="about">
-      <div class="container-lg pt-4">
+      <div class="container-lg pt-4 reveal">
         <div class="row justify-content-center">
           <div class="col-lg-8">
             <div class="section-title text-center">
@@ -156,7 +161,7 @@
     <!-- Service -->
 
     <section class="services py-5 bg-secondary" id="service">
-      <div class="container-lg py-4">
+      <div class="container-lg py-4 reveal">
         <div class="row justify-content-center">
           <div class="col-lg-8">
             <div class="section-title text-center">
@@ -201,7 +206,7 @@
     <!-- Portfolio -->
 
     <section class="portfolio py-5 bg-lightgray" id="portfolio">
-      <div class="container-lg py-4">
+      <div class="container-lg py-4 reveal">
         <div class="row justify-content-center">
           <div class="col-lg-8">
             <div class="section-title text-center">
@@ -258,7 +263,7 @@
     <!-- Freelance Available -->
 
     <section class="freelance-available py-5 bg-dark">
-      <div class="container-lg py-4">
+      <div class="container-lg py-4 reveal">
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center">
             <p class="text-white fs-5 fw-bold">Do you have any project ?</p>
@@ -274,7 +279,7 @@
     <!-- Business -->
 
     <section class="business py-5 bg-secondary" id="business">
-      <div class="container-lg py-4">
+      <div class="container-lg py-4 reveal">
         <div class="row justify-content-center">
           <div class="col-lg-8">
             <div class="section-title text-center">
@@ -334,7 +339,7 @@
     <!-- Contact -->
 
     <section class="contact py-5 bg-lightgray" id="contact">
-      <div class="container-lg py-4">
+      <div class="container-lg py-4 reveal">
         <div class="row justify-content-center">
           <div class="col-lg-8">
             <div class="section-title text-center">
@@ -410,7 +415,7 @@
     <!-- My Certificates -->
 
     <section class="certificates py-5 bg-secondary" id="certificates">
-      <div class="container-lg py-4">
+      <div class="container-lg py-4 reveal">
         <div class="row justify-content-center">
           <div class="col-lg-8">
             <div class="section-title text-center">
@@ -476,6 +481,31 @@
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  -->
+
+  <!-- Reveal animation -->
+  <script type="text/javascript">
+  window.addEventListener('scroll', reveal);
+
+  function reveal() {
+    var reveals = document.querySelectorAll('.reveal');
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var revealTop = reveals[i].getBoundingClientRect().top;
+    var revealPoint = 150;
+
+  if (revealTop < windowHeight - revealPoint) {
+    reveals[i].classList.add('active');
+    } else {
+        reveals[i].classList.remove('active');
+    }
+    }
+    }
+  </script>
+<!-- Reveal animation End-->
+
+
   </body>
 </html>
